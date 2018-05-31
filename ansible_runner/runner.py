@@ -90,9 +90,9 @@ class Runner(object):
             self.config.command[1:],
             cwd=self.config.cwd,
             env=self.config.env,
-            ignore_sighup=True,
-            encoding='utf-8',
-            echo=False,
+            #ignore_sighup=True,
+            #encoding='utf-8',
+            #echo=False,
             use_poll=True,
         )
         child.logfile_read = stdout_handle
